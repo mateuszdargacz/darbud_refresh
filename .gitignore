@@ -1,0 +1,8 @@
+.idea
+env
+public/
+project/local_settings.py
+*.log
+*.pot
+*.pyc
+sqlite3.db

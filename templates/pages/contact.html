@@ -1,0 +1,54 @@
+ {% load  cms_tags menu_tags sekizai_tags i18n thumbnail %}
+  <section id="contact" class="bamboo-contact-section">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-12">
+            <h2>{% trans "CONTACT US" %}<br><small>{% trans "Send us an email or call us." %}</small></h2>
+          </div> <!-- /.col-lg-12 -->
+
+          <div class="col-md-6 col-sm-6">
+            <form id="contact-form" action="#">
+                    <div class="row form">
+                        <div class="col-sm-12 row-col">
+                            <div class="box">
+                                <div id="name-group" class="form-group">
+                                <input class="name form-control" type="text" name="name" placeholder="{% trans "Your Name" %}">
+                                </div>
+                                <div id="email-group" class="form-group">
+                                <input class="mail form-control" type="text" name="email" placeholder="{% trans "E-mail address" %}l">
+                                </div>
+                                <div id="phone-group" class="form-group ">
+                                <input class="phone form-control" type="text" name="phone" placeholder="{% trans "Phone number" %}">
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <div id="message-group" class="form-group">
+                                <textarea name="message"  rows="6" placeholder="{% trans "Write a message" %}" class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row submit">
+                        <div id="submit-contact" class="col-md-2 ">
+                            <br/>
+                            <input  class="pull-left btn btn-primary"type="submit" value="{% trans "Send message" %}">
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </form>
+          </div> <!-- /.col-md-6 -->
+
+          <div class="col-md-6 col-sm-6">
+            <div class="map-wrapper">
+              <div id="bamboo-map"></div>
+            </div> <!-- /.map-wrapper -->
+          </div> <!-- .col-md-6 -->
+
+        </div> <!-- /.row -->
+      </div> <!-- /.container -->
+
+    </section>

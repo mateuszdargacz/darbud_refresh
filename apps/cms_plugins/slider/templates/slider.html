@@ -1,0 +1,46 @@
+{% load slider_tags %}
+
+
+<div class="fullwidthbanner-container roundedcorners">
+<div class="fullwidthbanner">
+<ul>
+
+<!-- SLIDE  -->
+{% for slide in slides %}
+
+<li data-transition="{{ slide.slide_in }}" data-slotamount="7" data-masterspeed="1500">
+
+    <!-- COVER IMAGE -->
+    <img src="{{ slide.background.url }}" alt="" data-bgfit="cover" data-bgposition="left top"
+         data-bgrepeat="no-repeat">
+
+    <!-- LAYER NR. 1 -->
+    {% for obj in slide.slideobj_set.all %}
+        <div class="tp-caption lightgrey_divider skewfromrightshort customout"
+             data-x="{{ obj.image_position_vertical }}"
+             data-y="{{ obj.image_position_horizontal }}"
+             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+             data-speed="{{ obj.speed }}"
+             data-start="{{ obj.start_time }}"
+             data-easing="{{ obj.data_easying }}"
+             data-captionhidden="off"
+             style="z-index: {{ forloop.counter }}">
+            {% if obj.link %}
+                <a class="btn btn-primary btn-lg" target="_blank"
+                href="{{ obj.link }}">{{ obj.link_name }}</a>
+            {% endif %}
+            {% if obj.image %}
+            <img class="img-responsive" src="{{ obj.image }}" alt="">
+            {% endif %}
+        </div>
+    {% endfor %}
+</li>
+{% endfor %}
+</ul>
+<div class="tp-bannertimer"></div>
+</div>
+</div>
+
+
+
+

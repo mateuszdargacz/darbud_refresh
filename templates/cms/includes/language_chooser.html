@@ -1,0 +1,12 @@
+{% load i18n menu_tags %}
+{% get_available_languages as languages %}
+{% for language in languages %}
+    {% language language.0 %}
+        <li>
+        <a href="{% page_language_url language.0 %}"{% ifequal current_language language.0 %} class="current"{% endifequal %}>
+            <img src="{{ STATIC_URL }}assets/images/flags/{% if language.0 != "en" %}{{ language.0 }}{% else %}us{% endif %}.png" width="16" height="11" alt="{{ language.0 }} Language" />
+            {{ language.1 }}
+        </a>
+        </li>
+    {% endlanguage %}
+{% endfor %}

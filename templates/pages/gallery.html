@@ -1,0 +1,174 @@
+{% load  cms_tags menu_tags sekizai_tags i18n thumbnail %}
+<section id="portfolio" class="bamboo-portfolio-section">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h2>VIEW OUR PORTFOLIO<br>
+                    <small>Beautiful and versatile.</small>
+                </h2>
+                <div class="centered-pills">
+                    <ul class="nav nav-pills">
+                        <li class="active" data-group="all"><a href="#">All</a></li>
+                        <li data-group="gutter"><a href="#">{% trans "Guttering" %}</a></li>
+                        <li data-group="roofs"><a href="#">{% trans "roofs" %}</a></li>
+                        <li data-group="other"><a href="#">{% trans "other" %}</a></li>
+                    </ul>
+                </div>
+                <!-- /.centered-pills -->
+            </div>
+            <!-- /.col-lg-12 -->
+
+            <ul id="grid">
+
+                <li class="col-md-3 col-sm-6 col-xs-6 portfolio-item"
+                    data-src="{{ MEDIA_URL }}gallery/images/tb_DSC00866.png" data-groups='["all", "roofs", "other"]'>
+                    <div class="portfolio-thumbnail">
+                        <div class="caption">
+                            <h4>{% trans "FullScreen" %}<br>
+                                <small>{% trans "Gallery" %}</small>
+                            </h4>
+                        </div>
+                        <img class="img-responsive" src="{{ MEDIA_URL }}gallery/images/tb_DSC00866.png"
+                             alt="portfolio-item">
+                    </div>
+                    <!-- /.portfolio-thumbnail -->
+                </li>
+                <li class="col-md-3 col-sm-6 col-xs-6 portfolio-item"
+                    data-src="{{ MEDIA_URL }}gallery/images/tb_DSC00868.png" data-groups='["all", "roofs"]'>
+                    <div class="portfolio-thumbnail">
+                        <div class="caption">
+                            <h4>{% trans "FullScreen" %}<br>
+                                <small>{% trans "Gallery" %}</small>
+                            </h4>
+                        </div>
+                        <img class="img-responsive" src="{{ MEDIA_URL }}gallery/images/tb_DSC00868.png"
+                             alt="portfolio-item">
+                    </div>
+                    <!-- /.portfolio-thumbnail -->
+                </li>
+                <li class="col-md-3 col-sm-6 col-xs-6 portfolio-item"
+                    data-src="{{ MEDIA_URL }}gallery/images/tb_DSC00870.png" data-groups='["all", "roofs"]'>
+                    <div class="portfolio-thumbnail">
+                        <div class="caption">
+                            <h4>{% trans "FullScreen" %}<br>
+                                <small>{% trans "Gallery" %}</small>
+                            </h4>
+                        </div>
+                        <img class="img-responsive" src="{{ MEDIA_URL }}gallery/images/tb_DSC00870.png"
+                             alt="portfolio-item">
+                    </div>
+                    <!-- /.portfolio-thumbnail -->
+                </li>
+                <li class="col-md-3 col-sm-6 col-xs-6 portfolio-item"
+                    data-src="{{ MEDIA_URL }}gallery/images/tb_DSC00873.png" data-groups='["all", "roofs"]'>
+                    <div class="portfolio-thumbnail">
+                        <div class="caption">
+                            <h4>{% trans "FullScreen" %}<br>
+                                <small>{% trans "Gallery" %}</small>
+                            </h4>
+                        </div>
+                        <img class="img-responsive" src="{{ MEDIA_URL }}gallery/images/tb_DSC00873.png"
+                             alt="portfolio-item">
+                    </div>
+                    <!-- /.portfolio-thumbnail -->
+                </li>
+                <li class="col-md-3 col-sm-6 col-xs-6 portfolio-item"
+                    data-src="{{ MEDIA_URL }}gallery/images/tb_DSC00874.png" data-groups='["all", "roofs", "other"]'>
+                    <div class="portfolio-thumbnail">
+                        <div class="caption">
+                            <h4>{% trans "FullScreen" %}<br>
+                                <small>{% trans "Gallery" %}</small>
+                            </h4>
+                        </div>
+                        <img class="img-responsive" src="{{ MEDIA_URL }}gallery/images/tb_DSC00874.png"
+                             alt="portfolio-item">
+                    </div>
+                    <!-- /.portfolio-thumbnail -->
+                </li>
+                <li class="col-md-3 col-sm-6 col-xs-6 portfolio-item"
+                    data-src="{{ MEDIA_URL }}gallery/images/tb_sp_DSC00865.png" data-groups='["all", "roofs", "other"]'>
+                    <div class="portfolio-thumbnail">
+                        <div class="caption">
+                            <h4>{% trans "FullScreen" %}<br>
+                                <small>{% trans "Gallery" %}</small>
+                            </h4>
+                        </div>
+                        <img class="img-responsive" src="{{ MEDIA_URL }}gallery/images/tb_sp_DSC00865.png"
+                             alt="portfolio-item">
+                    </div>
+                    <!-- /.portfolio-thumbnail -->
+                </li>
+                <li class="col-md-3 col-sm-6 col-xs-6 portfolio-item"
+                    data-src="{{ MEDIA_URL }}gallery/images/tb_sp_DSC00867.png" data-groups='["all", "roofs"]'>
+                    <div class="portfolio-thumbnail">
+                        <div class="caption">
+                            <h4>{% trans "FullScreen" %}<br>
+                                <small>{% trans "Gallery" %}</small>
+                            </h4>
+                        </div>
+                        <img class="img-responsive" src="{{ MEDIA_URL }}gallery/images/tb_sp_DSC00867.png"
+                             alt="portfolio-item">
+                    </div>
+                    <!-- /.portfolio-thumbnail -->
+                </li>
+
+                <li class="col-md-3 col-sm-6 col-xs-6 portfolio-item"
+                    data-src="{{ MEDIA_URL }}gallery/images/tb_sp_DSC00869.png" data-groups='["all", "gutter"]'>
+                    <div class="portfolio-thumbnail">
+                        <div class="caption">
+                            <h4>{% trans "FullScreen" %}<br>
+                                <small>{% trans "Gallery" %}</small>
+                            </h4>
+                        </div>
+                        <img class="img-responsive" src="{{ MEDIA_URL }}gallery/images/tb_sp_DSC00869.png"
+                             alt="portfolio-item">
+                    </div>
+                    <!-- /.portfolio-thumbnail -->
+                </li>
+                <li class="col-md-3 col-sm-6 col-xs-6 portfolio-item"
+                    data-src="{{ MEDIA_URL }}gallery/images/tb_sp_DSC00870.png" data-groups='["all", "other"]'>
+                    <div class="portfolio-thumbnail">
+                        <div class="caption">
+                            <h4>{% trans "FullScreen" %}<br>
+                                <small>{% trans "Gallery" %}</small>
+                            </h4>
+                        </div>
+                        <img class="img-responsive" src="{{ MEDIA_URL }}gallery/images/tb_sp_DSC00870.png"
+                             alt="portfolio-item">
+                    </div>
+                    <!-- /.portfolio-thumbnail -->
+                </li>
+                <li class="col-md-3 col-sm-6 col-xs-6 portfolio-item"
+                    data-src="{{ MEDIA_URL }}gallery/images/tb_sp_DSC00871.png" data-groups='["all", "gutter", "other"]'>
+                    <div class="portfolio-thumbnail">
+                        <div class="caption">
+                            <h4>{% trans "FullScreen" %}<br>
+                                <small>{% trans "Gallery" %}</small>
+                            </h4>
+                        </div>
+                        <img class="img-responsive" src="{{ MEDIA_URL }}gallery/images/tb_sp_DSC00871.png"
+                             alt="portfolio-item">
+                    </div>
+                    <!-- /.portfolio-thumbnail -->
+                </li>
+                <li class="col-md-3 col-sm-6 col-xs-6 portfolio-item"
+                data-src="{{ MEDIA_URL }}gallery/images/tb_sp_DSC00872.png" data-groups='["all", "gutter"]'>
+                    <div class="portfolio-thumbnail">
+                        <div class="caption">
+                            <h4>{% trans "FullScreen" %}<br>
+                                <small>{% trans "Gallery" %}</small>
+                            </h4>
+                        </div>
+                        <img class="img-responsive" src="{{ MEDIA_URL }}gallery/images/tb_sp_DSC00872.png"
+                             alt="portfolio-item">
+                    </div>
+                    <!-- /.portfolio-thumbnail -->
+                </li>
+
+            </ul>
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
