@@ -142,8 +142,6 @@ INSTALLED_APPS = (
     'mptt',
     'sekizai',
     'cms',
-    'djangocms_text_ckeditor',
-    'djangocms_googlemap',
     'cms.admin',
     #thidparty
     'easy_thumbnails',
