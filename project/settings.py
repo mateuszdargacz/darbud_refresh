@@ -223,16 +223,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'mateuszdargacz@gmail.com'
 
-#TODO UNCOMMENT!!!!!!!!!!!
-# try:
-#     execfile('%s/project/local_settings.py' % PROJECT_PATH)
-# except IOError:
-#     pass
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',  # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'darbud.db',  # Or path to database file if using sqlite3.
-
-    }
-
-}
+try:
+    execfile('%s/project/local_settings.py' % PROJECT_PATH)
+except IOError:
+    pass
