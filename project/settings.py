@@ -49,7 +49,9 @@ SITE_ID = 1
 # If you set this to False, Django will make some optimizations so as not
 # to load the internationalization machinery.
 USE_I18N = True
-
+LOCALE_PATHS = (
+    os.path.join(PROJECT_PATH, 'templates', 'locale'),
+)
 # If you set this to False, Django will not format dates, numbers and
 # calendars according to the current locale.
 USE_L10N = True
@@ -213,7 +215,7 @@ CMS_SEO_FIELDS = True
 #Emails
 CONTACT_EMAIL_TO = ['mateuszdargacz@gmail.com']
 #email settings
-EMAIL_FOOTER = u"\n\nPensjonat Jonasz\nDębki\ntel. 693 519 890, 602 444 508\npensjonatjonasz@op.pl\nNumer konta:  do wypełnienia"
+EMAIL_FOOTER = u"\n\nDar-bud\n\ntel. 501 179 492 , 0 58) 678 41 98 \nannabertrand@wp.pl\n"
 DEFAULT_FROM_EMAIL = 'Dar-bud Pytanie <rezerwacja@dar-bud.com.pl>'
 EMAIL_SUBJECT_PREFIX = '[Dar-bud Pytanie]'
 EMAIL_USE_TLS = True
